@@ -1,0 +1,20 @@
+log = input('Введіть логін ')
+paswr = input('Введіть пароль ')
+database = {
+    'hhh' : 12,
+    'juyy' : 13,
+     'marl': 100
+}
+if not log:
+    raise RuntimeError(' Пустий пароль')
+try:
+    authenticated = database[log] == paswr #конвертує у bool
+    if not authenticated:
+        raise ValueError
+except ValueError:
+    print('Неправильний пароль')
+except KeyError:
+    print('Acces denied')
+
+
+[].append.__doc__

@@ -1,0 +1,8 @@
+fp = open('my_test_file.txt', 'r+')
+fp.write('Main year year!\n')
+#fp.close()
+
+
+
+with open ('my_test_file.txt') as fp:
+    print(fp.read())
